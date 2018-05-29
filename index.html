@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sniglet' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#flip").click(function() {
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+
+    <style>
+        #panel,
+        #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #d8dcff;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+
+
+<body class="news">
+    <header>
+        <div class="nav">
+            <ul>
+                <li class="tutorials">
+                    <a class="active" href="index.html">home</a></li>
+                <li class="photography"><a href="photography.html">photography</a></li>
+                <li class="about"><a href="aboutme.html">about me</a></li>
+                <li class="news"><a href="technology.html">technology</a></li>
+                <li class="contact"><a href="contact.html">contact</a></li>
+                <li class="debate"><a href="debate.html">debate</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="flip">contents</div>
+    <div id="panel">photography<br>about me<br>technology<br>contact<br>debate</div>
+
+</body>
+
+
+</html>
