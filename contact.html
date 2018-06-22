@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sniglet' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="news">
+    <header>
+        <div class="nav">
+            <ul>
+                <li class="home"><a href="index.html">home</a></li>
+                <li class="photography"><a href="photography.html">photography</a></li>
+                <li class="about"><a href="aboutme.html">about me</a></li>
+                <li class="news"><a href="technology.html">technology</a></li>
+                <li class="tutorials">
+                    <a class="active" href="contact.html">contact</a></li>
+                <li class="debate"><a href="debate.html">debate</a></li>
+                <li class="music"><a href="music.html">music</a></li>
+            </ul>
+        </div>
+    </header>
+
+<video autoplay muted loop id="myVideo">
+  <source src="images/Time%20Lapse%20Video%20Of%20Milky%20Way%20Galaxy.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>Contact Me</h1>
+  <p>m.e.hickin@student.saintkentigern.com <br> follow me on instagram @maddy.hickin</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
